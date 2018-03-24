@@ -1,0 +1,299 @@
+/*Global*/
+body{
+    margin: 0;
+    padding: 0;
+                     /* fix: blue border on the bottom of the showcase and make it responsive. */
+}
+.clear-fix{
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+/* HEADER*/
+.main-header{
+    width: 100%;
+    background-color: #007fff;
+    position: relative;
+}
+.main-header h1{
+    font-family: 'Italianno';
+    margin: 0;
+    font-size: 5em;
+    font-weight: 100;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    
+}
+.main-header img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 45%;
+    top: 70%;
+}
+/*NAV BAR*/
+.navbar{
+    float: right;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+li:hover{
+    background-color: #89cff0;
+}
+ul {
+    
+    margin: 0;
+    list-style: none;
+    
+}
+li {
+    display: inline;
+    float: left;
+    font-family: Tahoma;
+    margin-right: 10px;
+    font-size: 1.25em;
+    background-color: #fdab9f;
+     padding: 5px;  
+    border-radius: 5px;
+    
+}
+
+/*SHOWCASE*/
+
+#showcase{
+    background-image: url(../images/big.jpg);
+    background-repeat: no-repeat;
+    background-position: 60% 20%;
+    height: 400px;
+    position: relative;
+    top: 40px;
+    
+    
+}
+#showcase blockquote{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    font-family: 'Italianno';
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+/*SERVICES*/
+#services {
+    background-color: #fdab9f;
+    border-top: 10px;           /*border not working*/
+    border-top-color: #c6edff;
+    margin-top: 40px;
+}
+#services h2{
+    color: white;
+    text-align: center;
+    font-family: 'Italianno';
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 5em;
+    font-weight: 100;
+}
+#services p{
+    color: white;
+    font-family: Tahoma;
+}
+.box {
+    float: left;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+.box img{
+    width: 70%;
+    
+}
+/*NEWSLETTER*/                      
+#newsletter{
+    background-color: #89cff0;
+    padding: 10px;
+    margin: 0;
+}
+#newsletter h2{
+    float: left;
+    color: white;
+    margin-left: 5px;
+    font-family: Tahoma;
+}
+#newsletter form {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+#newsletter input[type="email"]{
+   height: 30px;
+   width: 250px;
+    padding: 0px;
+   
+}
+/*FOOTER*/
+footer {
+    background-color: #007fff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: Tahoma;
+}
+#buttom-1{
+    height: 35px;
+    background-color: #fdab9f;
+    color: white;
+    border: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* MEDIA QUERIES*/
+
+/*Tablet styles*/
+@media only screen and (max-width: 768px) {
+.container {
+        width: 100%; 
+    }
+    
+/*Header*/
+
+.main-header h1 {
+        font-size: 3em;
+        
+    }
+.main-header img{
+        width: 60px;
+        height: 60px;
+        top: 55%;
+        
+    }
+    
+    /*Nav-Bar*/
+    
+.navbar {
+        float: none;
+        text-align: center;
+        width: 75%;
+        margin: auto;
+       
+    
+    }
+.navbar li{
+       width: 25%;
+       margin-bottom: 10px;
+       margin-right: 5%;
+    font-size: 0.9em;
+       
+       
+    }
+    
+    /*showcase*/
+#showcase {
+   top: 0;
+    
+    }
+#showcase blockquote{
+       font-size:  2.5em;
+       margin:auto;
+    }
+
+#services {
+    margin-top: 0;
+    font-size: 0.9em; 
+}
+.box {
+      float:none;
+    width: 80%;
+    margin:auto; 
+    line-height: 1.5em;
+    }
+#newsletter form{
+        clear: left;
+        float: none;
+    }
+#newsletter h2{
+        float:none;
+        text-align:center;
+    }
+ }  
+/*Mobile styles*/
+@media only screen and (max-width: 480px) {
+
+body {
+    
+}  
+.main-header h1{
+     font-size: 2em; 
+     float: left;
+     margin:1%;
+    padding: 1%;
+    }
+.main-header img{
+        display: none;
+    }
+    .dropdown-nav{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(../images/navbar-icon.png) no-repeat 98% center;
+    cursor: pointer;
+    
+}
+.navbar {
+        width: 100%;
+        padding: 0;
+    }
+.navbar ul{
+       padding: 0; 
+    }
+    .navbar li{
+       width: 100%;
+        margin: 0;
+        border-bottom: 2px;
+        border-bottom-color: black;
+        border-radius: 0;
+    }
+header nav ul {
+    overflow: hidden;
+     height: 0;
+    width: 100%;
+}
+header nav ul.open {
+        height: auto;
+    }
+
+    header nav ul li{
+        float: none;
+        display: block;
+        
+}
+header nav li a {
+        border-bottom: 1px solid black;
+        display:block;
+        padding:8px;
+    }
+    #newsletter button{
+    display: block;
+    width:100%;
+}
+    #newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+}
+
